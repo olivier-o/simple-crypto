@@ -1,11 +1,11 @@
 #!/usr/bin/env node
 var program = require('commander');
-var {encode, decode} = require ('./dist/index')
+var {encode, decode} = require ('../dist/index')
 
 program
   .version('0.0.1')
   .usage(' -e <val> | -d <val')
-  .option('-e, --encode [val]', 'Key in a number [0]')
+  .option('-e, --encode [val]', 'Key in a number signed integer in the 14-bit range [-8192..+8191]')
   .option('-d, --decode [val]', 'Key in an encoded value [7F7F]')
   .parse(process.argv);
 

@@ -29,7 +29,7 @@ function hex2bin(h) {
 function encode(value){
   if (isNaN(value)) { throw (`error input ${value} is not a number`)  }
   value = parseInt(value)
-  if (value < MIN || value > MAX) { throw (`error input (${value}) must have a value lower than ${MIN} and greater than ${MAX}.`) }
+  if (value < MIN || value > MAX) { throw (`error input (${value}) must have a value greater than ${MIN} and lower than ${MAX}.`) }
   let binaryValue = (value + OFFSET).toString(2)
 
   let padded = padAndSplit(binaryValue)

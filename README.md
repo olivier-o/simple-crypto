@@ -2,11 +2,12 @@
 ## install
 ```
 npm install
-npm build
+npm run build
+npm link
 ```
 ## run 
 ```
-node index
+crypto
 ```
 
 
